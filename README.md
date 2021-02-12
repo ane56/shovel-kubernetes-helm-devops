@@ -1,2 +1,2 @@
-# shovel-kubernetes-helm-cicd
-Shovel-Kubernetes Helm CICD 实践
+# shovel-kubernetes-helm-devops
+Shovel Kubernetes Helm CI/CD 实践
