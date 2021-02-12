@@ -12,7 +12,7 @@ node {
         stage('Clone target repo') {
              checkout([$class: 'GitSCM', branches: [[name: branch]],
              doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [],
-             userRemoteConfigs: [[credentialsId: 'deploy', url: 'https://gitee.com/lhr1996/shovel-kh.git']]])
+             userRemoteConfigs: [[credentialsId: 'deploy', url: 'https://github.com/ChinaLHR/shovel-kubernetes-helm-devops.git']]])
         }
 
         stage('Build package') {
