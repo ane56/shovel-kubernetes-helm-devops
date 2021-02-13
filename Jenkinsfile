@@ -43,6 +43,11 @@ node {
     } catch (Exception e) {
         currentBuild.result = 'FAILURE'
     } finally {
-        //TODO
+            sh """
+               docker image rm ${releaseImage} || true
+               docker image rm ${packageImage} || true
+            """
+            deleteDir()
+
     }
 }
